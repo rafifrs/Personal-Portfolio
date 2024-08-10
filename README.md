@@ -19,3 +19,6 @@ Waktu dan sering menunda, serta baru mempelajari framework.
 IDENTITTAS PEMBUAT
 Nama: Rafif Farras
 NIM TPB: 19623275
+
+link deploy
+https://rafif-farras-portfolio.vercel.app
