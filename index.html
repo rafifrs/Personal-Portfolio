@@ -8,15 +8,21 @@
 </head>
 <body>
     <!--Header-->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <header class="bg-dark absolute top-0 left-0 w-full flex items-center z-10">
         <div class="container">
-            <div class="flex items-center justify-between relative">
+            <div class="flex justify-between relative">
                 <div class="px-4">
-                    <a href="#home" class="font-bold text-lg text-primary block py-6">Rafif Farras</a>
+                    <a href="#home" class="font-bold text-lg text-primary block mt-6 mb-6">rafiffarras</a>
                 </div>
-            </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </div>            
         </div>
-
     </header>
     <!-- Hero Section -->
     <section id="home" class="pt-36 max-w-full mx-auto">
@@ -32,7 +38,7 @@
                     <div class="relative mt-4 lg:mt-3 lg:right-0">
                         <img src="dist/foto.PNG" alt="Rafif Farras" class="max-w-full mx-auto">
                         <span class="absolute bottom-20 -z-10 left-1/2 -translate-x-1/2 md:scale-125 xl:scale-150">
-                            <svg width='400' height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                            <svg width='350' height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                                 <path fill="#14b8a6" d="M31.8,-46.3C44.3,-41.6,59.4,-37.8,68.1,-28.3C76.8,-18.8,79.1,-3.6,73.9,8.4C68.7,20.3,56,28.9,45.9,38.7C35.8,48.5,28.2,59.5,17.4,65.5C6.6,71.4,-7.5,72.4,-20.1,68.7C-32.8,64.9,-44,56.4,-51.7,45.8C-59.5,35.1,-63.9,22.5,-63.6,10.4C-63.4,-1.7,-58.7,-13.1,-54.4,-25.8C-50.1,-38.4,-46.3,-52.2,-37.3,-58.6C-28.3,-64.9,-14.1,-63.8,-2.2,-60.4C9.7,-56.9,19.4,-51.1,31.8,-46.3Z" transform="translate(100 100)" />
                               </svg>
                         </span>
@@ -45,37 +51,55 @@
     <section id="about" class="pt-36 pb-32">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full px-4 mb-10">
-                    <h3 class="font-bold uppercase text-primary ">Interest</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci natus consequuntur ut maiores temporibus doloremque nam deleniti.</p>
+                <div class=" w-full mb-10 px-8  py-9 rounded-2xl  md:w-1/2">
+                    <h3 class="font-bold uppercase text-primary text-2xl">Interest</h3><br>
+                    <p class="text-justify">As an Informatics Engineering student, I am deeply interested in both Software Engineering and Data Science. I am determined to become an expert in these fields and am actively learning and eager to deepen my knowledge every day. My passion lies in understanding and creating efficient software systems that solve real-world problems, as well as analyzing and interpreting data to drive informed decision-making. Through my studies, I aim to develop a strong foundation in programming, algorithm design, and data analytics, preparing myself for a career that bridges these two dynamic fields.</p>
                 </div>
-                <div class="w-full px-4 mb-10">
-                    <h3>Project</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci natus consequuntur ut maiores temporibus doloremque nam deleniti.</p>
+                <div class=" w-full mb-10 px-8 py-9 rounded-2xl md:w-1/2">
+                    <h3 class="font-bold uppercase text-primary text-2xl ">Achievements</h3><br>
+                    <p class="text-justify">Over the past year, I have been involved in several organizations where I had the opportunity to develop my skills in partnership management and relations. Below are some of the key roles I’ve held:</p>
+                    <ul class="">
+                        <br>
+                        <li>
+                            <strong>IEEE ITB SB 2023/2024</strong><br>
+                            Partnership Officer
+                        </li>
+                        <br>
+                        <li>
+                            <strong>TEC ITB</strong><br>
+                            Relation Staff Intern at Kabinet Prospera<br>
+                            Relation Staff at TEC Festival 2023
+                        </li>
+                    </ul>
                 </div>
-                <div class="w-full px-4 mb-10">
-                    <h3>Achievements</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum adipisci natus consequuntur ut maiores temporibus doloremque nam deleniti.</p>
+        </div>
+    </section>
+    <section id="portfolio" class=" bg-dark">
+        <div class="container ">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-16">
+                    <h4 class="pt-16 font-semibold text-lg text-primary text-2xl">Portofolio</h4>
+                </div>
+                <p class="text-white text-center text-xs">My Last Project</p>
+            </div>
+            <div class="w-full px-4 flex flex-wrap justify-center">
+                <div class="mb-12 p-4">
+                    <div class="rounded-md shadow-md overflow-hidden">
+                        <img src="dist/port.png" alt="">
+                    </div>
+                    <div class="flex flex-col items-center space-y-5 mt-10">
+                        <p class="text-white text-center text-xs">
+                            The project involved creating a web application for the Compfest Academy selection process. The application features services for a salon, including reservation and review functionalities. Although the application was not selected and I didn't get into the academy, it included key features for salon management and customer feedback.
+                        </p>
+                        <a href="https://rafifrs.github.io/SEA_Salon/" class="text-center text-base font-semibold text-white py-3 px-6 rounded-full bg-primary hover:shadow-xl hover:opacity-70">
+                            Click!
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-white dark:bg-gray-900">
-        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
-            <div class="max-w-screen-md">
-                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Let's find more that brings us together.</h2>
-                <p class="mb-8 font-light text-gray-500 sm:text-xl dark:text-gray-400">Flowbite helps you connect with friends, family and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups, Watch and Marketplace.</p>
-                <div class="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                    <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                        Get started
-                    </a>
-                    <a href="#" class="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                        <svg class="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                        View more
-                    </a>  
-                </div>
-            </div>
-        </div>
-    </section>
+<script src="dist/js/script.js"></script>    
 </body>
 </html>
